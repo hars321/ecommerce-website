@@ -1,0 +1,220 @@
+.title {
+  -webkit-animation-duration: 1s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+@-webkit-keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.cover{
+  display: flex;
+  align-items: center;
+  
+  flex-direction: column;
+  background: #FC5C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 120vh;
+  
+    border-color: black;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  margin: 0;
+  padding: 0;
+}
+.title{
+  font-family: 'Shadows Into Light', cursive;
+  color:white;
+  font-size: 100px;
+  text-shadow: 20px 20px rgba(12, 1, 1, 0.2);
+  height: 60vh;
+}
+
+  .explore-button{
+   border-color: black;
+   padding-left: 180px;
+   padding-right: 180px;
+   font-family: 'Shadows Into Light', cursive;
+   font-size: 30px;
+   background-color:transparent;
+  }
+  .explore-2 button{
+    margin-top: 20px;
+    
+    background-color: transparent;
+    border-color: black;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    margin-right: 20px;
+   }
+  
+  .explore-button:hover{
+   color:white;
+    box-shadow: 10px 10px rgba(8, 8, 8, 0.5);
+  }
+  .cover{
+    margin-bottom: 0px;
+    
+  }
+  .content{
+    margin-top: 0px;
+    border-style: solid;
+    border-color: black;
+    
+    background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+
+    margin: 0;
+    padding:0;
+    color: black;
+  }
+  .total{
+    display: flex;
+    flex-direction: column;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: black;
+  }
+  .cards{
+    display: grid;
+    color:black;
+    grid-template-columns: 50% 50%;
+    
+  }
+  .card-1{
+    justify-self: center;
+    padding:10%;
+   
+    margin-bottom: 50px;
+    background-color: rgba(248, 245, 245, 0.1);
+color:white;
+
+    margin:50px;
+    
+    border-color: black;
+    border-style: double;
+  }
+  
+  .stuff h1{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size:72px;
+    color: black;
+   
+  }
+  
+  
+  .card-top{
+    display: block;
+    
+  }
+  .card-bottom{
+    color:black;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    text-align: center;
+  }
+  .card-1:hover{
+    background-color: rgba(248, 245, 245, 0.5);
+    transform: scale(1.1);
+    box-shadow: 10px 10px rgba(8, 8, 8, 0.5);
+  }
+  .navbar{
+    background-color: black;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-style: dashed;
+    border-color: gray;
+    flex-direction: row;
+    height: 60px;
+  }
+  .logo{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .logo{
+    color:white;
+    font-family: 'Pacifico', cursive;
+     
+  }
+  .logo h1{
+    text-shadow: 10px 10px rgba(252, 244, 244,0.3);
+    font-size: 40px;
+    margin-top: 0px;
+  }
+  .drop{
+    display: flex;
+    font-family: 'Shadows Into Light', cursive;   
+    color:white;
+    
+    }
+    .drop-menu{
+      margin-right: 40px;
+      font-size: 20px;
+    }
+
+  .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    min-height: 30vh;
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+  }
