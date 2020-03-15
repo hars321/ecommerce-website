@@ -5,6 +5,7 @@
   animation-name: bounceIn;
 }
 
+
 @-webkit-keyframes bounceIn {
   from,
   20%,
@@ -71,7 +72,10 @@
   color:white;
   font-size: 100px;
   text-shadow: 20px 20px rgba(12, 1, 1, 0.2);
-  height: 60vh;
+}
+.title h1{
+  margin: 20px;
+  margin-top: 60px;
 }
 
   .explore-button{
@@ -240,3 +244,76 @@ color:white;
   a:active {
     color: transparent;
   }
+  .map{
+    display: flex;
+    
+    justify-content: space-around;
+}
+.nearby{
+  background: #B2FEFA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Pacifico', cursive;
+
+}
+.location{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  
+  height: 5vh;
+  margin: 20px;
+  
+}
+.location input{
+  border-color: black;
+  border-style:solid ;
+  width: 51%;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 10px 10px rgba(12, 1, 1, 0.2);
+}
+.location button{
+  border-color: black;
+  border-style:solid ;
+  margin-left: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 10px 10px rgba(12, 1, 1, 0.2);
+}
+.nearby h1{
+  display: flex;
+  font-size: 60px;
+  justify-content: center;
+}
+
+.mapouter{
+  border-color: black;
+  border-style: dotted;
+  box-shadow: 10px 10px rgba(12, 1, 1, 0.2);
+}
+.nearby-cards{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(253, 242, 242, 0.527);
+    border-color: black;
+  border-style: dotted;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-basis:20%;
+  box-shadow: 10px 10px rgba(17, 16, 16, 0.527);
+  margin:20px;
+}
+.seller-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.seller-details h5{
+  margin: 2px;
+font-size: large;
+}
+.nearby-shops{
+  display: flex;
+  justify-content: space-evenly;
+  margin:20px;
+}

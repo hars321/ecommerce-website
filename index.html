@@ -2,7 +2,7 @@
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Courgette|Exo+2|Pacifico|Satisfy|Shadows+Into+Light&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="mystyle.css"> 
 </head>
 <header>
@@ -41,7 +41,7 @@
 </div>
 <div class="content">
     <div class="stuff">
-        <h1 id="shopping">SHOP</h1>
+        <h1 id="shopping" > SHOP BY PRODUCT</h1>
     </div>
     <div class="cards">
         
@@ -60,7 +60,7 @@
 
         <div class="card-1">
             <div class="card-top">
-                <img src="/images/HUAWEI-P20-715x856.png"height="250px" width="200px">
+                <img src="/images/HUAWEI-P20-715x856.png" onclick="window.location.href = 'shop.html';" height="250px" width="200px">
             </div>
             <div class="card-bottom">
                 <p>
@@ -93,6 +93,75 @@
 
     </div>
 </div>
+<div class="nearby">
+    <h1>SHOP NEARBY</h1>
+    <div class="location">
+        <input type="text" name="inp_location" placeholder="location">
+        <button type="submit" name="submit-location" value="search">search</button>
+    </div>
+    <div class="map">
+        
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="817" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=delhi&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:817px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:817px;}</style></div>
+    </div>
+    <div class="nearby-shops">
+        <div class="nearby-cards">
+                <div class="seller-image">
+                    <img src="/images/user_male2-512.png" height="100px" width="100px">
+                </div>
+                <div class="seller-details">
+                    <h5> seller name</h5>
+                    <h5>seller-details</h5>
+                </div>
+        </div>
+        <div class="nearby-cards">
+            <div class="seller-image">
+                <img src="/images/user_male2-512.png" height="100px" width="100px">
+            </div>
+            <div class="seller-details">
+                <h5> seller name</h5>
+                <h5>seller-details</h5>
+            </div>
+    </div>
+    <div class="nearby-cards">
+        <div class="seller-image">
+            <img src="/images/user_male2-512.png" height="100px" width="100px">
+        </div>
+        <div class="seller-details">
+            <h5> seller name</h5>
+            <h5>seller-details</h5>
+        </div>
+</div>
+</div>
+<div class="nearby-shops">
+    <div class="nearby-cards">
+            <div class="seller-image">
+                <img src="/images/user_male2-512.png" height="100px" width="100px">
+            </div>
+            <div class="seller-details">
+                <h5> seller name</h5>
+                <h5>seller-details</h5>
+            </div>
+    </div>
+    <div class="nearby-cards">
+        <div class="seller-image">
+            <img src="/images/user_male2-512.png" height="100px" width="100px">
+        </div>
+        <div class="seller-details">
+            <h5> seller name</h5>
+            <h5>seller-details</h5>
+        </div>
+</div>
+<div class="nearby-cards">
+    <div class="seller-image">
+        <img src="/images/user_male2-512.png" height="100px" width="100px">
+    </div>
+    <div class="seller-details">
+        <h5> seller name</h5>
+        <h5>seller-details</h5>
+    </div>
+</div>
+</div>
+
 </div>
 </body>
 <footer>
