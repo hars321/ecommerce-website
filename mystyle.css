@@ -218,3 +218,25 @@ color:white;
     font-family: 'Courgette', cursive;
     font-size: 30px;
   }
+  .drop-menu:hover{
+    text-shadow:10px 5px rgba(250, 246, 246, 0.5);
+    transform: scale(1.1);
+  }
+  a:link {
+    color: transparent;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: transparent;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: transparent;
+  }
+  
+  /* selected link */
+  a:active {
+    color: transparent;
+  }

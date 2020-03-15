@@ -1,0 +1,147 @@
+.navbar{
+    background-color: black;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-style: dashed;
+    border-color: gray;
+    flex-direction: row;
+    height: 60px;
+  }
+  .logo{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .logo{
+    color:white;
+    font-family: 'Pacifico', cursive;
+     
+  }
+  .logo h1{
+    text-shadow: 10px 10px rgba(252, 244, 244,0.3);
+    font-size: 40px;
+    margin-top: 0px;
+  }
+  .drop{
+    display: flex;
+    font-family: 'Shadows Into Light', cursive;   
+    color:white;
+    
+    }
+    .drop-menu{
+      margin-right: 40px;
+      font-size: 20px;
+    }
+
+  
+  .drop-menu:hover{
+    text-shadow:10px 5px rgba(250, 246, 246, 0.5);
+    transform: scale(1.1);
+  }
+  .cover{
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 120vh;
+    
+      border-color: black;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    margin: 0;
+    padding: 0;
+  }
+  .heading{
+      
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    justify-content: center;
+    height: 10%;
+
+  }
+  .heading h1{
+      display: flex;
+      justify-content: center;
+      margin: 5vh;
+  }
+  .login-box{
+      display: flex;
+      background-color: transparent;
+      justify-content: center;
+      font-family: 'Shadows Into Light', cursive; ;
+      border-color: black;
+      border-style: dashed;
+      
+  }
+  .login-seller{
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      padding:20px;
+      font-size: 30px;
+        
+      padding-left: 60px;
+      padding-right: 60px;
+      border-color: black;
+      border-right-style: dashed;
+  }
+  .login-buyer{
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      padding:20px;
+      padding-left: 60px;
+      padding-right: 60px;
+      font-size: 30px;
+  }
+ h4{
+     font-size: 40px;
+     height: fit-content;
+     margin:10px;
+
+ }
+ .login-box button{
+     margin-top: 20px;
+ }
+ .cover input{
+    
+    
+    background-color:transparent;
+    font-size: 20px;
+    margin-bottom: 2vh;
+    border-style: dashed;
+    padding-right: 100px;
+ }
+.cover  button{
+    
+    border-style: dashed;
+    border-color: black;
+   background-color:transparent;
+   color: rgb(51, 50, 50);
+ }
+ a:link {
+    color: transparent;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: transparent;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: transparent;
+  }
+  
+  /* selected link */
+  a:active {
+    color: transparent;
+  }

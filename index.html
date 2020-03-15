@@ -7,8 +7,9 @@
 </head>
 <header>
     <div class="navbar">
+        <a href="/index.html">
         <div class="logo"><img src="/images/1580291.png" height="100px" width="100px"><h1>ESHOP</h1></div>
-        
+    </a>
         <div class="drop">
             <input type="text" placeholder="search" class="drop-menu">
             
@@ -28,17 +29,19 @@
     </div>
     
     <div class="explore">
-        <button class="explore-button" type="button" name="explore" value="Explore">Explore <img src="images/grunge-arrow-2-3.png" height=20px width="20px"></button>
+        <a href="#shopping">
+        <button class="explore-button" type="button" name="explore" value="Explore">Explore <img src="images/grunge-arrow-2-3.png" height=20px width="20px" ></button>
+    </a>
     </div>
     <div class="explore-2">
-        <button class="explore-button" type="button" name="explore" value="Explore">Login </button>
-        <button class="explore-button" type="button" name="explore" value="Explore">Signup </button>
+        <button class="explore-button" type="button" name="explore" value="Explore" onclick="window.location.href = 'login.html';">Login </button>
+        <button class="explore-button" type="button" name="explore" value="Explore"onclick="window.location.href = 'signup.html';">Signup </button>
     </div>
 
 </div>
 <div class="content">
     <div class="stuff">
-        <h1>SHOP</h1>
+        <h1 id="shopping">SHOP</h1>
     </div>
     <div class="cards">
         
