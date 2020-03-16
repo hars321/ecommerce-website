@@ -58,14 +58,13 @@
   background: #FC5C7D;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 120vh;
   
+  padding-bottom:15%;
     border-color: black;
   border-bottom-style: solid;
   border-left-style: solid;
   border-right-style: solid;
-  margin: 0;
-  padding: 0;
+  
 }
 .title{
   font-family: 'Shadows Into Light', cursive;
@@ -189,7 +188,7 @@ color:white;
     margin-left: 20px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    
   }
   .logo{
     color:white;
@@ -300,7 +299,7 @@ font-family: 'Pacifico', cursive;
   padding: 10px;
   flex-wrap: wrap;
   flex-basis:20%;
-  box-shadow: 10px 10px rgba(17, 16, 16, 0.527);
+  
   margin:20px;
 }
 .seller-details{
@@ -316,4 +315,7 @@ font-size: large;
   display: flex;
   justify-content: space-evenly;
   margin:20px;
+}
+.nearby-cards:hover{
+  box-shadow: 10px 10px rgba(17, 16, 16, 0.527);
 }

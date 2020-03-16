@@ -14,7 +14,11 @@
     margin-left: 20px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    
+  }
+  .logo img{
+    height: 60px;
+    width: 60px;
   }
   .logo{
     color:white;

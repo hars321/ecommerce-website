@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "e commerce website project",
+  "main": "nodefile.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "find-package-json": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node nodefile.js"
+  },
+  "author": "harshit",
+  "license": "ISC"
+}

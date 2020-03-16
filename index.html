@@ -2,13 +2,13 @@
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Courgette|Exo+2|Pacifico|Satisfy|Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="mystyle.css"> 
 </head>
 <header>
     <div class="navbar">
-        <a href="/index.html">
-        <div class="logo"><img src="/images/1580291.png" height="100px" width="100px"><h1>ESHOP</h1></div>
+        <a href="/index">
+        <div class="logo"><img src="./images/1580291.png" height="60px" width="60px"><h1>ESHOP</h1></div>
     </a>
         <div class="drop">
             <input type="text" placeholder="search" class="drop-menu">
@@ -34,8 +34,8 @@
     </a>
     </div>
     <div class="explore-2">
-        <button class="explore-button" type="button" name="explore" value="Explore" onclick="window.location.href = 'login.html';">Login </button>
-        <button class="explore-button" type="button" name="explore" value="Explore"onclick="window.location.href = 'signup.html';">Signup </button>
+        <button class="explore-button" type="button" name="explore" value="Explore" onclick="window.location.href = '/login';">Login </button>
+        <button class="explore-button" type="button" name="explore" value="Explore" onclick="window.location.href = '/signup';">Signup </button>
     </div>
 
 </div>
@@ -43,49 +43,57 @@
     <div class="stuff">
         <h1 id="shopping" > SHOP BY PRODUCT</h1>
     </div>
+    <div class="location">
+        <input type="text" name="inp_location" placeholder="enter product name">
+        <button type="submit" name="submit-location" value="search">search</button>
+    </div>
     <div class="cards">
         
 
         
-        <div class="card-1">
+        <div class="card-1" onclick="window.location.href='/shop/1?number=1';">
             <div class="card-top">
-                <img src="/images/HUAWEI-P20-715x856.png" height="250px" width="200px">
+                
+                
+                <img id="img-1" src="/images/HUAWEI-P20-715x856.png"  height="250px" width="200px">
+                
             </div>
             <div class="card-bottom">
-                <p>
+                <p id="item-1">
+                    Item-1
+                </p>
+                
+            </div>
+        </div>
+
+        <div class="card-1"  onclick="window.location.href='/shop/2?number=2';">
+            <div class="card-top">
+                <img id="img-2" src="/images/HUAWEI-P20-715x856.png" height="250px" width="200px">
+            </div>
+            <div class="card-bottom">
+                <p id="item-2">
                     Item-1
                 </p>
             </div>
         </div>
 
-        <div class="card-1">
+        <div class="card-1"  onclick="window.location.href='/shop/3?number=3';">
             <div class="card-top">
-                <img src="/images/HUAWEI-P20-715x856.png" onclick="window.location.href = 'shop.html';" height="250px" width="200px">
+                <img id="img-3" src="/images/HUAWEI-P20-715x856.png" height="250px" width="200px">
             </div>
             <div class="card-bottom">
-                <p>
-                    Item-1
-                </p>
-            </div>
-        </div>
-
-        <div class="card-1">
-            <div class="card-top">
-                <img src="/images/HUAWEI-P20-715x856.png"height="250px" width="200px">
-            </div>
-            <div class="card-bottom">
-                <p>
+                <p id="item-3">
                     Item-1
                 </p>
             </div>
         </div>
         
-        <div class="card-1">
+        <div class="card-1"  onclick="window.location.href='/shop/4?number=4';">
             <div class="card-top">
-                <img src="/images/HUAWEI-P20-715x856.png"height="250px" width="200px">
+                <img id="img-4" src="/images/HUAWEI-P20-715x856.png" height="250px" width="200px">
             </div>
             <div class="card-bottom">
-                <p>
+                <p id="item-4">
                     Item-1
                 </p>
             </div>
@@ -96,7 +104,7 @@
 <div class="nearby">
     <h1>SHOP NEARBY</h1>
     <div class="location">
-        <input type="text" name="inp_location" placeholder="location">
+        <input type="text" name="inp_location" placeholder="enter location">
         <button type="submit" name="submit-location" value="search">search</button>
     </div>
     <div class="map">
@@ -106,63 +114,67 @@
     <div class="nearby-shops">
         <div class="nearby-cards">
                 <div class="seller-image">
-                    <img src="/images/user_male2-512.png" height="100px" width="100px">
+                    <img id="seller-photo-1" src="./images/user_male2-512.png" height="100px" width="100px">
                 </div>
                 <div class="seller-details">
-                    <h5> seller name</h5>
-                    <h5>seller-details</h5>
+                    <h5 id="seller-name-1"> seller name</h5>
+                    <h5 id="seller-rating-1">seller-details</h5>
                 </div>
         </div>
         <div class="nearby-cards">
             <div class="seller-image">
-                <img src="/images/user_male2-512.png" height="100px" width="100px">
+                <img id="seller-photo-2" src="./images/user_male2-512.png" height="100px" width="100px">
             </div>
             <div class="seller-details">
-                <h5> seller name</h5>
-                <h5>seller-details</h5>
+                <h5 id="seller-name-2"> seller name</h5>
+                <h5 id="seller-rating-2">seller-details</h5>
             </div>
     </div>
     <div class="nearby-cards">
         <div class="seller-image">
-            <img src="/images/user_male2-512.png" height="100px" width="100px">
+            <img id="seller-photo-3" src="./images/user_male2-512.png" height="100px" width="100px">
         </div>
         <div class="seller-details">
-            <h5> seller name</h5>
-            <h5>seller-details</h5>
+            <h5 id="seller-name-3"> seller name</h5>
+            <h5 id="seller-rating-3">seller-details</h5>
         </div>
 </div>
 </div>
 <div class="nearby-shops">
     <div class="nearby-cards">
             <div class="seller-image">
-                <img src="/images/user_male2-512.png" height="100px" width="100px">
+                <img id="seller-photo-4" src="./images/user_male2-512.png" height="100px" width="100px">
             </div>
             <div class="seller-details">
-                <h5> seller name</h5>
-                <h5>seller-details</h5>
+                <h5 id="seller-name-4"> seller name</h5>
+                <h5 id="seller-rating-4">seller-details</h5>
             </div>
     </div>
     <div class="nearby-cards">
         <div class="seller-image">
-            <img src="/images/user_male2-512.png" height="100px" width="100px">
+            <img id="seller-photo-5" src="./images/user_male2-512.png" height="100px" width="100px">
         </div>
         <div class="seller-details">
-            <h5> seller name</h5>
-            <h5>seller-details</h5>
+            <h5 id="seller-name-5"> seller name</h5>
+            <h5 id="seller-rating-5">seller-details</h5>
         </div>
 </div>
 <div class="nearby-cards">
     <div class="seller-image">
-        <img src="/images/user_male2-512.png" height="100px" width="100px">
+        <img id="seller-photo-6" src="./images/user_male2-512.png" height="100px" width="100px">
     </div>
     <div class="seller-details">
-        <h5> seller name</h5>
-        <h5>seller-details</h5>
+        <h5 id="seller-name-6"> seller name</h5>
+        <h5 id="seller-rating-6">seller-details</h5>
     </div>
 </div>
 </div>
 
 </div>
+<script src="/dom.js">
+</script>
+<script src="/seller.js">
+</script>
 </body>
 <footer>
     <div class="bottom">

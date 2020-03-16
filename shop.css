@@ -32,7 +32,11 @@
     margin-left: 20px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    
+  }
+  .logo img{
+    height: 60px;
+    width: 60px;
   }
   .logo{
     color:white;
@@ -62,9 +66,9 @@
 }
 .left{
     background-color: rgba(241, 234, 234, 0.205);
-    height: 100vh;
+    height: auto;
     width: 30%;
-    display:fixed;
+    
 }
 .right{
     width:70%;
@@ -72,7 +76,88 @@
     border-style: solid;
     
 }
-.map{
-    display: flex;
-    align-content: right;
+#doc-image{
+  width:50%;
+  
+}
+.content-images{
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style:dotted;
+  border-color: black;
+  border-width: 0.5px;
+  
+  
+}
+.item-photo{
+  
+  border-style:dashed ;
+  
+  border-color: black;
+  margin: 15px;
+  border-width: 0.5px;
+  border-radius: 20%;
+  box-shadow: 5px 5px rgba(68, 59, 59, 0.534);
+}
+.item-details {
+  
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  
+}
+.item-details h2{
+  font-family: Pacifico;
+}
+.buy{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+}
+.buy button{
+  font-family: 'Shadows Into Light', cursive;   
+  margin:5px;
+  font-size: 20px;
+  background-color: rgba(247, 239, 239, 0.493);
+  border-color: rgba(0, 0, 0, 0.61);
+  border-radius: 10%;
+}
+.buy button:hover{
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.514);
+}
+#left-heading{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 72px;
+  
+}
+.left-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#doc-image{
+  border-color: black;
+  border-radius: 10%;
+  border-style: dashed;
+  border-width: 0.5px;
+  width: 80%;
+  height: 80%;
+}
+#left-heading{
+  margin: 5%;
+}
+#doc-image:hover{
+  transform:  scale(1.2);
+}
+.left-content{
+  position: sticky;
+  top:0vh;
 }

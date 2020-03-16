@@ -17,7 +17,11 @@ html {
     margin-left: 20px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    
+  }
+  .logo img{
+    height: 60px;
+    width: 60px;
   }
   .logo{
     color:white;
@@ -79,7 +83,7 @@ html {
       display: flex;
       background-color: transparent;
       justify-content: center;
-      font-family: 'Shadows Into Light', cursive; ;
+      font-family: 'Shadows Into Light', cursive;
       border-color: black;
       border-style: dashed;
       
