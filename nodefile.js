@@ -32,9 +32,10 @@ app.get('/shop/:id',(req,res)=>{
 })
 
 app.get('/signup',(req,res)=>{
-   res.sendFile(path.join(__dirname,'signup.html'),);
+   res.sendFile(path.join(__dirname,'signup.html'));
 });
 
 app.listen(server_port, server_ip_address, function () {
-   console.log( "Listening on " + server_ip_address + ", port " + server_port )
+   console.log( "Listening on " + server_ip_address + ", port " + server_port );
+   console.log("working fine");
  });
