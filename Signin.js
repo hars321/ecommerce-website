@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var mysql=require('mysql');
 var dbconn=require('./database-connection.js');
 
@@ -22,7 +21,6 @@ function buyersignintry(table){
    dbconn.connection.query("INSERT INTO `login-buyer`(`username`, `password`) VALUES ("+'"'+table.username+'"'+","+'"'+table.password+'"'+")");
 };
 exports.sellersignintry=sellersignintry;
-=======
 var mysql=require('mysql');
 var dbconn=require('./database-connection.js');
 
@@ -46,5 +44,4 @@ function buyersignintry(table){
    dbconn.connection.query("INSERT INTO `login-buyer`(`username`, `password`) VALUES ("+'"'+table.username+'"'+","+'"'+table.password+'"'+")");
 };
 exports.sellersignintry=sellersignintry;
->>>>>>> my commit
 exports.buyersignintry=buyersignintry;

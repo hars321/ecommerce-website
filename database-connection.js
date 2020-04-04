@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var mysql = require('mysql')
 
 var connection = mysql.createConnection({
@@ -17,7 +16,6 @@ connection.connect(function(err) {
   }
 });
 
-=======
 var mysql = require('mysql')
 
 var connection = mysql.createConnection({
@@ -36,5 +34,4 @@ connection.connect(function(err) {
   }
 });
 
->>>>>>> my commit
 exports.connection=connection;

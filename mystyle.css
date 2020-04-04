@@ -680,21 +680,35 @@ font-size: large;
 
 
 @media screen and (max-width:800px) {
-  html{
-    width: 100%;
-    align-content: center;
-    overflow: hidden;
+  body{
+    width: max-content;
+    
+    align-content: right;
+    
+
+    
   }
 
-  
+  /* header{
+    width: max-content;
+  } */
   #nav-search{
     visibility: hidden;
   }
   .navbar{
     display: flex;
+    
     flex-direction: column;
   }
+  .title{
+    display: block;
+    align-content: left;
+  }
+  .title{
+    /* width: 60rem; */
+  }
   .cover{
+    
     height:100vh;
   }
   
