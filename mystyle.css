@@ -331,7 +331,7 @@ font-size: large;
 
 @media screen and (max-width:800px) {
   html{
-    width: max-content;
+/*     width: max-content; */
     align-content: center;
   }
 
