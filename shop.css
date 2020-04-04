@@ -156,6 +156,7 @@
 }
 #doc-image:hover{
   transform:  scale(1.2);
+  overflow: hidden;
 }
 .left-content{
   position: sticky;

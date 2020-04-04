@@ -4,8 +4,12 @@
   "description": "e commerce website project",
   "main": "nodefile.js",
   "dependencies": {
+    "angular": "^1.7.9",
     "express": "^4.17.1",
-    "find-package-json": "^1.2.0"
+    "find-package-json": "^1.2.0",
+    "git": "^0.1.5",
+    "mysql": "^2.18.1",
+    "rhc": "0.0.1"
   },
   "devDependencies": {},
   "scripts": {

@@ -5,13 +5,15 @@
     
     <link rel="stylesheet" type="text/css" href="mystyle.css"> 
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <header>
     <div class="navbar">
         <a href="/index">
         <div class="logo"><img src="./images/1580291.png" height="60px" width="60px"><h1>ESHOP</h1></div>
     </a>
         <div class="drop">
-            <input type="text" placeholder="search" class="drop-menu">
+            <input id="nav-search" type="text" placeholder="search" class="drop-menu">
             
             <div class="drop-menu">about</div>
             <div class="drop-menu">contact</div>
@@ -31,7 +33,7 @@
     <div class="explore">
         <a href="#shopping">
         <button class="explore-button" type="button" name="explore" value="Explore">Explore <img src="images/grunge-arrow-2-3.png" height=20px width="20px" ></button>
-    </a>
+        </a>
     </div>
     <div class="explore-2">
         <button class="explore-button" type="button" name="explore" value="Explore" onclick="window.location.href = '/login';">Login </button>
@@ -107,10 +109,29 @@
         <input type="text" name="inp_location" placeholder="enter location">
         <button type="submit" name="submit-location" value="search">search</button>
     </div>
-    <div class="map">
+    <div class="outmap">
+        <div id="map"></div>
         
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="817" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=delhi&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:817px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:817px;}</style></div>
-    </div>
+        <script>
+            x=navigator.geolocation;
+            x.getCurrentPosition(success,failure);
+            function success(position){
+                var myLat=position.coords.latitude;
+                var myLong=position.coords.longitude;
+                var coords=new google.maps.LatLng(myLat,myLong);
+                var mapOptions={
+                    zoom:10,
+                    center:coords
+                }
+                var map=new google.maps.Map(document.getElementById("map"),mapOptions);
+
+            }
+            function failure(){}
+        </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG1LU4_BACOkdCOoAGNZR0aEiZ49W2pCo"
+    async defer></script>
+        </div>
+        
     <div class="nearby-shops">
         <div class="nearby-cards">
                 <div class="seller-image">
@@ -175,6 +196,10 @@
 </script>
 <script src="/seller.js">
 </script>
+<script src="./database-connection.js">
+</script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
 </body>
 <footer>
     <div class="bottom">

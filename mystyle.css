@@ -180,7 +180,7 @@ color:white;
     align-items: center;
     justify-content: space-between;
     border-bottom-style: dashed;
-    border-color: gray;
+    border-color: black;
     flex-direction: row;
     height: 60px;
   }
@@ -245,7 +245,9 @@ color:white;
   }
   .map{
     display: flex;
-    
+    height: 100vh;
+    border-color: black;
+    border-style: solid;
     justify-content: space-around;
 }
 .nearby{
@@ -318,4 +320,31 @@ font-size: large;
 }
 .nearby-cards:hover{
   box-shadow: 10px 10px rgba(17, 16, 16, 0.527);
+}
+#map {
+  height: 50vh;
+  width: 100%;
+  z-index: 100;
+  justify-content: center;
+}
+
+
+@media screen and (max-width:800px) {
+  html{
+    width: max-content;
+    align-content: center;
+  }
+
+  
+  #nav-search{
+    visibility: hidden;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+  .cover{
+    height:100vh;
+  }
+  
 }
