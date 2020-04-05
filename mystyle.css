@@ -692,6 +692,7 @@ font-size: large;
     width: 100vmin;
     display: flex;
     flex-direction: column;
+    
   }
   .total
   {/*overflow: hidden; */
@@ -714,8 +715,11 @@ font-size: large;
   
 }
 .drop-menu{
-  visibility: hidden; 
+  width: 0px;
 }
+/* .drop-menu{
+  visibility: hidden; 
+} */
   /* header{
     width: max-content;
   } */
