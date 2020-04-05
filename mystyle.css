@@ -704,9 +704,7 @@ font-size: large;
     display: block;
     align-content: left;
   }
-  .title{
-    /* width: 60rem; */
-  }
+  
   .cover{
     
     height:100vh;
