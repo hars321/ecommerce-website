@@ -681,18 +681,18 @@ font-size: large;
 
 @media screen and (max-width:800px) {
   .total{
-    align-self: center;
+    text-align: center;
+  }
+  footer{
+    width: 100vmin;
   }
   body{
     /* width: min-content; */
     width: 100vmin;
-    
-    
-    align-self: center;
-    
+    text-align: center;
   }
   .navbar{
-    width: 100%;
+    width: 100vmin;
     display: flex;
     flex-direction: column;
     
@@ -700,7 +700,10 @@ font-size: large;
   .total
   {/*overflow: hidden; */
     /* transform: scale(0.5); */
-    width: 100vmin;
+    display: flex;
+    
+    align-items: center;
+    
     /* width:max-content; */
   
 }
@@ -739,7 +742,7 @@ font-size: large;
   }
    */
   .cover{
-    
+    width: 100%;
     height:100vh;
   }
   .stuff{
@@ -753,7 +756,7 @@ font-size: large;
     flex-direction: column;
     
   }
-  .nearby h1{
+  h1{
     transform: scale(0.7);
     align-self: center;
   }
@@ -764,8 +767,30 @@ font-size: large;
     display: flex;
     flex-direction: column;
     margin: 0;
+    align-content: center;
   }
+ .nearby{
+  text-align: center;
+ }
   .bottom{
     max-height: 80px;
+  }
+  
+  html, body {
+    position: relative;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    overflow: auto;
+    width: inherit;
+  }
+  .total{
+    overflow: auto;
+    width: inherit;
   }
 }
